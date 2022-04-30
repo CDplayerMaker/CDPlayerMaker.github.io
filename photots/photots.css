@@ -1,9 +1,4 @@
-#tupian{
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-}
-#tupian:hover {
+.cbp_tmlabel:hover {
     /* transform:scale(1.05); */
     transform: translateY(-3px);
     z-index: 1;
