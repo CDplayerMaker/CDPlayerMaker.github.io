@@ -171,7 +171,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/05/05/manim/">manim</a>
+      <a class="article-title" href="/2022/05/05/manim/">manim常用语句以及欧几里得几何原本中勾股定理证明代码</a>
     </h1>
   
 
@@ -184,65 +184,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="manim我常用语句"><a href="#manim我常用语句" class="headerlink" title="manim我常用语句"></a>manim我常用语句</h3><pre><code>`os.getcwd()`用这个改变python指定路径
-`python ./manim.py Euler.py Euler -pl `运行的语句
-`self.play(ShowCreation(triangle1))`用于展示图形
-`self.play(ReplacementTransform(triangle2_2, square1_1))`用于图型转变
-</code></pre>
-<h3 id="欧几里得几何原本中勾股定理的证明"><a href="#欧几里得几何原本中勾股定理的证明" class="headerlink" title="欧几里得几何原本中勾股定理的证明"></a>欧几里得几何原本中勾股定理的证明</h3><p><code>from sre_parse import WHITESPACE</code></p>
-<p><code>from turtle import color</code></p>
-<p><code>from matplotlib.transforms import Transform</code></p>
-<p><code>import numpy as np</code></p>
-<p><code>from pyparsing import White</code></p>
-<p><code>from sympy import Circle</code></p>
-<p><code>from manimlib import *</code></p>
-<p><code>from manimlib.animation.creation import ShowCreation</code></p>
-<p><code>from manimlib.animation.transform import ReplacementTransform</code></p>
-<p><code>from manimlib.mobject.geometry import Polygon, Square, Triangle</code></p>
-<p><code>from manimlib.scene.scene import Scene</code></p>
-<p><code>class SquareToCircle(Scene):</code></p>
-<p>  <code>def construct(self):</code></p>
-<p>​    <code>\#绘制一个直角三角形</code></p>
-<p>​    <code>triangle1 = Polygon(np.array([-0.45,0,0]), np.array([0.8,0,0]), np.array([0,0.6,0]),color=&quot;#FFFFFF&quot;)</code></p>
-<p>​    <code>self.play(ShowCreation(triangle1))</code></p>
-<p>​    <code>self.wait()</code></p>
-<p>​    <code>\#三边作正方形</code></p>
-<p>​    <code>square1 = Polygon(np.array([-0.45,0,0]), np.array([-1.05,0.45,0]), np.array([-0.6,1.05,0]), np.array([0,0.6,0]), color=&quot;#FFFFFF&quot;)</code></p>
-<p>​    <code>square1_1 = Polygon(np.array([-0.45,0,0]), np.array([-1.05,0.45,0]), np.array([-0.6,1.05,0]), np.array([0,0.6,0]), color=&quot;#FFFF00&quot;)</code></p>
-<p>​    <code>self.play(ShowCreation(square1))</code></p>
-<p>​    <code>self.wait()</code></p>
-<p>​    <code>square2 = Polygon(np.array([0.8,0,0]), np.array([1.4,0.8,0]), np.array([0.6,1.4,0]), np.array([0,0.6,0]), color=&quot;#FFFFFF&quot;)</code></p>
-<p>​    <code>square2_1 = Polygon(np.array([0.8,0,0]), np.array([1.4,0.8,0]), np.array([0.6,1.4,0]), np.array([0,0.6,0]), color=&quot;#F7A1A3&quot;)</code></p>
-<p>​    <code>square2_2 = Polygon(np.array([0.8,0,0]), np.array([1.4,0.8,0]), np.array([0.6,1.4,0]), np.array([0,0.6,0]), color=&quot;#F7A1A3&quot;)</code></p>
-<p>​    <code>self.play(ShowCreation(square2))</code></p>
-<p>​    <code>self.wait()</code></p>
-<p>​    <code>square3 = Polygon(np.array([-0.45,0,0]), np.array([-0.45,-1.25,0]), np.array([0.8,-1.25,0]), np.array([0.8,0,0]), color=&quot;#FFFFFF&quot;)</code></p>
-<p>​    <code>self.play(ShowCreation(square3))</code></p>
-<p>​    <code>self.wait()</code></p>
-<p>​    <code>\#绘制两个全等三角形</code></p>
-<p>​    <code>triangle2_1 = Polygon(np.array([-0.45,0,0]), np.array([-0.45,-1.25,0]), np.array([0,0.6,0]),color=&quot;#FFFF00&quot;)</code></p>
-<p>​    <code>self.play(ShowCreation(triangle2_1))</code></p>
-<p>​    <code>self.wait()</code></p>
-<p>​    <code>triangle2_2 = Polygon(np.array([-0.45,0,0]), np.array([0.8,0,0]), np.array([-1.05,0.45,0]),color=&quot;#FFFF00&quot;)</code></p>
-<p>​    <code>self.play(ShowCreation(triangle2_2))</code></p>
-<p>​    <code>self.wait()</code></p>
-<p>​    <code>\#绘制line</code></p>
-<p>​    <code>line = Polygon(np.array([0,0.6,0]), np.array([0,-1.25,0]),color=&quot;#FFFFFF&quot;)</code></p>
-<p>​    <code>self.play(ShowCreation(line))</code></p>
-<p>​    <code>self.wait()</code></p>
-<p>​    <code>\#定义两个面积区域</code></p>
-<p>​    <code>square4 = Polygon(np.array([-0.45,0,0]), np.array([0,0,0]), np.array([0,-1.25,0]), np.array([-0.45,-1.25,0]), color=&quot;#FFFF00&quot;)</code></p>
-<p>​    <code>square5 = Polygon(np.array([0.8,0,0]), np.array([0,0,0]), np.array([0,-1.25,0]), np.array([0.8,-1.25,0]), color=&quot;#F7A1A3&quot;)</code></p>
-<p>​    <code>self.play(ReplacementTransform(triangle2_1, square4))</code></p>
-<p>​    <code>self.wait()</code></p>
-<p>​    <code>self.play(ReplacementTransform(triangle2_2, square1_1))</code></p>
-<p>​    <code>self.wait()</code></p>
-<p>​    <code>self.play(ShowCreation(square2_1))</code></p>
-<p>​    <code>self.wait()</code></p>
-<p>​    <code>self.play(ReplacementTransform(square2_2, square5))</code></p>
-<p>​    <code>self.wait()</code></p>
-<p>&#96;&#96;    </p>
-
+        <h3 id="manim我常用的语句"><a href="#manim我常用的语句" class="headerlink" title="manim我常用的语句"></a>manim我常用的语句</h3><p><code>os.getcwd()</code>用这个改变python指定路径<br><code>python ./manim.py Euler.py Euler -pl </code>运行的语句<br><code>self.play(ShowCreation(triangle1))</code>用于展示图形<br><code>self.play(ReplacementTransform(triangle2_2, square1_1))</code>用于图型转变</p>
+        
       
 
       
