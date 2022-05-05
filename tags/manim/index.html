@@ -6,19 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>webgis学习日志 | CDPlayer</title>
+  <title>Tag: manim | CDPlayer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="webgis学习日志 BIM模型的数据格式Bim模型根据不同的专业包含不同的内容 Bim按照阶段可以分为生产前、生产中、生产完成">
-<meta property="og:type" content="article">
-<meta property="og:title" content="webgis学习日志">
-<meta property="og:url" content="http://example.com/2022/05/05/webgis/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="CDPlayer">
+<meta property="og:url" content="http://example.com/tags/manim/index.html">
 <meta property="og:site_name" content="CDPlayer">
-<meta property="og:description" content="webgis学习日志 BIM模型的数据格式Bim模型根据不同的专业包含不同的内容 Bim按照阶段可以分为生产前、生产中、生产完成">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-05-05T10:44:07.000Z">
-<meta property="article:modified_time" content="2022-05-05T11:03:16.392Z">
 <meta property="article:author" content="DD">
-<meta property="article:tag" content="webgis">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="CDPlayer" type="application/atom+xml">
@@ -167,191 +162,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-webgis" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      webgis学习日志
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2022" class="archive-year">2022</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2022/05/05/manim/" class="archive-article-date">
+  	<time datetime="2022-05-05T11:13:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-05</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2022/05/05/manim/">manim</a>
     </h1>
   
 
-        
-        <a href="/2022/05/05/webgis/" class="archive-article-date">
-  	<time datetime="2022-05-05T10:44:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>webgis学习日志</p>
-<h3 id="BIM模型的数据格式"><a href="#BIM模型的数据格式" class="headerlink" title="BIM模型的数据格式"></a>BIM模型的数据格式</h3><pre><code>Bim模型根据不同的专业包含不同的内容
-Bim按照阶段可以分为生产前、生产中、生产完成
-</code></pre>
-<span id="more"></span>
-<h3 id="Bim在gis平台需要保证流畅的显示"><a href="#Bim在gis平台需要保证流畅的显示" class="headerlink" title="Bim在gis平台需要保证流畅的显示"></a>Bim在gis平台需要保证流畅的显示</h3><pre><code>25帧以上
-避免重复、冗余的对象（gis平台、三方建模、后期检查）
-避免建复杂对象，可以对模型进行拆分建模
-避免建超长对象、可以进行合理拆分（例如管道、道路进行分段）
-圆柱对象可以用六边形来代替
-避免使用大纹理贴图（例如尺寸大于1024*1024的纹理）
-</code></pre>
-<h3 id="Bim对接GIS平台的方法"><a href="#Bim对接GIS平台的方法" class="headerlink" title="Bim对接GIS平台的方法"></a>Bim对接GIS平台的方法</h3><pre><code>插件导出（通过安装免费插件revit等）
-SuperMap导出
-</code></pre>
-<h3 id="Cesium是一个跨平台、跨浏览器的展示三位地图和地球的javascript库"><a href="#Cesium是一个跨平台、跨浏览器的展示三位地图和地球的javascript库" class="headerlink" title="Cesium是一个跨平台、跨浏览器的展示三位地图和地球的javascript库"></a>Cesium是一个跨平台、跨浏览器的展示三位地图和地球的javascript库</h3><pre><code>Cesium使用webGL来进行硬件加速图形、使用时不需要别的插件
-支持的数据格式
-    影响数据：bing、爱人成功i是、OSM、WMTS、WMS
-    地形数据：Arcgis、谷歌、STK（最新的地形数据）
-    矢量数据：KML、KMZ
-    三维模型：GLTF、GLB（二进制glTF文件）
-</code></pre>
-<h3 id="Cesium可以做什么"><a href="#Cesium可以做什么" class="headerlink" title="Cesium可以做什么"></a>Cesium可以做什么</h3><pre><code>支持模型的地理数据展示
-可以绘制各种几何图形，支持图片、三位模型等多种数据可视化展示
-时间轴 图层可视化
-可以实现场景渲染、粒子效果
-</code></pre>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">webgis</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">manim</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/05/05/webgis/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2022/05/05/manim/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          manim
-        
-      </div>
-    </a>
   
   
-    <a href="/2022/05/05/zhexue1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">海德格尔-《艺术作品的本源》（1）</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-  <div id="SOHUCS" sid="webgis" ></div> 
-<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
-<script type="text/javascript">
-    window.changyan.api.config({
-        appid: "true",
-        conf: "true"
-    });
-</script>
-</script>
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -378,9 +242,9 @@ SuperMap导出
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,

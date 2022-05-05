@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>webgis学习日志 | CDPlayer</title>
+  <title>manim | CDPlayer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="webgis学习日志 BIM模型的数据格式Bim模型根据不同的专业包含不同的内容 Bim按照阶段可以分为生产前、生产中、生产完成">
+  <meta name="description" content="manim我常用语句&#96;os.getcwd()&#96;用这个改变python指定路径 &#96;python .&#x2F;manim.py Euler.py Euler -pl &#96;运行的语句 &#96;self.play(ShowCreation(triangle1))&#96;用于展示图形 &#96;self.play(ReplacementTransform(triangle2_2, square1_1))&#96;用于图型转变  欧几里得几何原本">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webgis学习日志">
-<meta property="og:url" content="http://example.com/2022/05/05/webgis/index.html">
+<meta property="og:title" content="manim">
+<meta property="og:url" content="http://example.com/2022/05/05/manim/index.html">
 <meta property="og:site_name" content="CDPlayer">
-<meta property="og:description" content="webgis学习日志 BIM模型的数据格式Bim模型根据不同的专业包含不同的内容 Bim按照阶段可以分为生产前、生产中、生产完成">
+<meta property="og:description" content="manim我常用语句&#96;os.getcwd()&#96;用这个改变python指定路径 &#96;python .&#x2F;manim.py Euler.py Euler -pl &#96;运行的语句 &#96;self.play(ShowCreation(triangle1))&#96;用于展示图形 &#96;self.play(ReplacementTransform(triangle2_2, square1_1))&#96;用于图型转变  欧几里得几何原本">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-05-05T10:44:07.000Z">
-<meta property="article:modified_time" content="2022-05-05T11:03:16.392Z">
+<meta property="article:published_time" content="2022-05-05T11:13:43.000Z">
+<meta property="article:modified_time" content="2022-05-05T11:19:45.760Z">
 <meta property="article:author" content="DD">
-<meta property="article:tag" content="webgis">
+<meta property="article:tag" content="manim">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="CDPlayer" type="application/atom+xml">
@@ -167,53 +167,84 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-webgis" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-manim" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      webgis学习日志
+      manim
     </h1>
   
 
         
-        <a href="/2022/05/05/webgis/" class="archive-article-date">
-  	<time datetime="2022-05-05T10:44:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-05</time>
+        <a href="/2022/05/05/manim/" class="archive-article-date">
+  	<time datetime="2022-05-05T11:13:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>webgis学习日志</p>
-<h3 id="BIM模型的数据格式"><a href="#BIM模型的数据格式" class="headerlink" title="BIM模型的数据格式"></a>BIM模型的数据格式</h3><pre><code>Bim模型根据不同的专业包含不同的内容
-Bim按照阶段可以分为生产前、生产中、生产完成
+        <h3 id="manim我常用语句"><a href="#manim我常用语句" class="headerlink" title="manim我常用语句"></a>manim我常用语句</h3><pre><code>`os.getcwd()`用这个改变python指定路径
+`python ./manim.py Euler.py Euler -pl `运行的语句
+`self.play(ShowCreation(triangle1))`用于展示图形
+`self.play(ReplacementTransform(triangle2_2, square1_1))`用于图型转变
 </code></pre>
-<span id="more"></span>
-<h3 id="Bim在gis平台需要保证流畅的显示"><a href="#Bim在gis平台需要保证流畅的显示" class="headerlink" title="Bim在gis平台需要保证流畅的显示"></a>Bim在gis平台需要保证流畅的显示</h3><pre><code>25帧以上
-避免重复、冗余的对象（gis平台、三方建模、后期检查）
-避免建复杂对象，可以对模型进行拆分建模
-避免建超长对象、可以进行合理拆分（例如管道、道路进行分段）
-圆柱对象可以用六边形来代替
-避免使用大纹理贴图（例如尺寸大于1024*1024的纹理）
-</code></pre>
-<h3 id="Bim对接GIS平台的方法"><a href="#Bim对接GIS平台的方法" class="headerlink" title="Bim对接GIS平台的方法"></a>Bim对接GIS平台的方法</h3><pre><code>插件导出（通过安装免费插件revit等）
-SuperMap导出
-</code></pre>
-<h3 id="Cesium是一个跨平台、跨浏览器的展示三位地图和地球的javascript库"><a href="#Cesium是一个跨平台、跨浏览器的展示三位地图和地球的javascript库" class="headerlink" title="Cesium是一个跨平台、跨浏览器的展示三位地图和地球的javascript库"></a>Cesium是一个跨平台、跨浏览器的展示三位地图和地球的javascript库</h3><pre><code>Cesium使用webGL来进行硬件加速图形、使用时不需要别的插件
-支持的数据格式
-    影响数据：bing、爱人成功i是、OSM、WMTS、WMS
-    地形数据：Arcgis、谷歌、STK（最新的地形数据）
-    矢量数据：KML、KMZ
-    三维模型：GLTF、GLB（二进制glTF文件）
-</code></pre>
-<h3 id="Cesium可以做什么"><a href="#Cesium可以做什么" class="headerlink" title="Cesium可以做什么"></a>Cesium可以做什么</h3><pre><code>支持模型的地理数据展示
-可以绘制各种几何图形，支持图片、三位模型等多种数据可视化展示
-时间轴 图层可视化
-可以实现场景渲染、粒子效果
-</code></pre>
+<h3 id="欧几里得几何原本中勾股定理的证明"><a href="#欧几里得几何原本中勾股定理的证明" class="headerlink" title="欧几里得几何原本中勾股定理的证明"></a>欧几里得几何原本中勾股定理的证明</h3><p><code>from sre_parse import WHITESPACE</code></p>
+<p><code>from turtle import color</code></p>
+<p><code>from matplotlib.transforms import Transform</code></p>
+<p><code>import numpy as np</code></p>
+<p><code>from pyparsing import White</code></p>
+<p><code>from sympy import Circle</code></p>
+<p><code>from manimlib import *</code></p>
+<p><code>from manimlib.animation.creation import ShowCreation</code></p>
+<p><code>from manimlib.animation.transform import ReplacementTransform</code></p>
+<p><code>from manimlib.mobject.geometry import Polygon, Square, Triangle</code></p>
+<p><code>from manimlib.scene.scene import Scene</code></p>
+<p><code>class SquareToCircle(Scene):</code></p>
+<p>  <code>def construct(self):</code></p>
+<p>​    <code>\#绘制一个直角三角形</code></p>
+<p>​    <code>triangle1 = Polygon(np.array([-0.45,0,0]), np.array([0.8,0,0]), np.array([0,0.6,0]),color=&quot;#FFFFFF&quot;)</code></p>
+<p>​    <code>self.play(ShowCreation(triangle1))</code></p>
+<p>​    <code>self.wait()</code></p>
+<p>​    <code>\#三边作正方形</code></p>
+<p>​    <code>square1 = Polygon(np.array([-0.45,0,0]), np.array([-1.05,0.45,0]), np.array([-0.6,1.05,0]), np.array([0,0.6,0]), color=&quot;#FFFFFF&quot;)</code></p>
+<p>​    <code>square1_1 = Polygon(np.array([-0.45,0,0]), np.array([-1.05,0.45,0]), np.array([-0.6,1.05,0]), np.array([0,0.6,0]), color=&quot;#FFFF00&quot;)</code></p>
+<p>​    <code>self.play(ShowCreation(square1))</code></p>
+<p>​    <code>self.wait()</code></p>
+<p>​    <code>square2 = Polygon(np.array([0.8,0,0]), np.array([1.4,0.8,0]), np.array([0.6,1.4,0]), np.array([0,0.6,0]), color=&quot;#FFFFFF&quot;)</code></p>
+<p>​    <code>square2_1 = Polygon(np.array([0.8,0,0]), np.array([1.4,0.8,0]), np.array([0.6,1.4,0]), np.array([0,0.6,0]), color=&quot;#F7A1A3&quot;)</code></p>
+<p>​    <code>square2_2 = Polygon(np.array([0.8,0,0]), np.array([1.4,0.8,0]), np.array([0.6,1.4,0]), np.array([0,0.6,0]), color=&quot;#F7A1A3&quot;)</code></p>
+<p>​    <code>self.play(ShowCreation(square2))</code></p>
+<p>​    <code>self.wait()</code></p>
+<p>​    <code>square3 = Polygon(np.array([-0.45,0,0]), np.array([-0.45,-1.25,0]), np.array([0.8,-1.25,0]), np.array([0.8,0,0]), color=&quot;#FFFFFF&quot;)</code></p>
+<p>​    <code>self.play(ShowCreation(square3))</code></p>
+<p>​    <code>self.wait()</code></p>
+<p>​    <code>\#绘制两个全等三角形</code></p>
+<p>​    <code>triangle2_1 = Polygon(np.array([-0.45,0,0]), np.array([-0.45,-1.25,0]), np.array([0,0.6,0]),color=&quot;#FFFF00&quot;)</code></p>
+<p>​    <code>self.play(ShowCreation(triangle2_1))</code></p>
+<p>​    <code>self.wait()</code></p>
+<p>​    <code>triangle2_2 = Polygon(np.array([-0.45,0,0]), np.array([0.8,0,0]), np.array([-1.05,0.45,0]),color=&quot;#FFFF00&quot;)</code></p>
+<p>​    <code>self.play(ShowCreation(triangle2_2))</code></p>
+<p>​    <code>self.wait()</code></p>
+<p>​    <code>\#绘制line</code></p>
+<p>​    <code>line = Polygon(np.array([0,0.6,0]), np.array([0,-1.25,0]),color=&quot;#FFFFFF&quot;)</code></p>
+<p>​    <code>self.play(ShowCreation(line))</code></p>
+<p>​    <code>self.wait()</code></p>
+<p>​    <code>\#定义两个面积区域</code></p>
+<p>​    <code>square4 = Polygon(np.array([-0.45,0,0]), np.array([0,0,0]), np.array([0,-1.25,0]), np.array([-0.45,-1.25,0]), color=&quot;#FFFF00&quot;)</code></p>
+<p>​    <code>square5 = Polygon(np.array([0.8,0,0]), np.array([0,0,0]), np.array([0,-1.25,0]), np.array([0.8,-1.25,0]), color=&quot;#F7A1A3&quot;)</code></p>
+<p>​    <code>self.play(ReplacementTransform(triangle2_1, square4))</code></p>
+<p>​    <code>self.wait()</code></p>
+<p>​    <code>self.play(ReplacementTransform(triangle2_2, square1_1))</code></p>
+<p>​    <code>self.wait()</code></p>
+<p>​    <code>self.play(ShowCreation(square2_1))</code></p>
+<p>​    <code>self.wait()</code></p>
+<p>​    <code>self.play(ReplacementTransform(square2_2, square5))</code></p>
+<p>​    <code>self.wait()</code></p>
+<p>&#96;&#96;    </p>
 
       
 
@@ -227,7 +258,7 @@ SuperMap导出
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">webgis</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">manim</a>
         		</li>
       		
 		</ul>
@@ -283,7 +314,7 @@ SuperMap导出
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/05/05/webgis/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/05/05/manim/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -297,18 +328,9 @@ SuperMap导出
   
 <nav id="article-nav">
   
-    <a href="/2022/05/05/manim/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          manim
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/05/05/zhexue1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">海德格尔-《艺术作品的本源》（1）</div>
+    <a href="/2022/05/05/webgis/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">webgis学习日志</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -338,7 +360,7 @@ SuperMap导出
   
 
   
-  <div id="SOHUCS" sid="webgis" ></div> 
+  <div id="SOHUCS" sid="manim" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
