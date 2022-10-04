@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+var reverseList = function(head) {
+    n = head.length-1;
+    var arr=[];
+    for(i=0;i<=n;i++){
+        arr[i]=head[n-i];
+    }
+    return arr;
+};
+console.log(reverseList([2,7,11,15]));
+</script>
+</html>
